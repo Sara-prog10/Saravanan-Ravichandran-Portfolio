@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="https://static.vecteezy.com/system/resources/previews/050/213/869/large_2x/letter-sr-rectangle-shape-modern-new-unique-shape-logo-free-vector.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saravanan Ravi | AI Engineer & Data Analyst</title>
+    <meta name="description" content="Personal portfolio of Saravanan Ravi, an AI Engineer and Data Analyst specializing in RAG agents, Power BI, and IoT solutions." />
+    <meta property="og:title" content="Saravanan Ravi | AI Engineer & Data Analyst" />
+    <meta property="og:description" content="Explore the projects and skills of Saravanan Ravi." />
+    <meta property="og:image" content="https://picsum.photos/1200/630" />
+    <meta property="og:url" content="/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              // New "Modern Tech" Palette
+              // Light Mode
+              primary: {
+                DEFAULT: '#0891b2', // cyan-600
+                light: '#67e8f9',   // cyan-300
+              },
+              surface: {
+                DEFAULT: '#ffffff', // white
+                subtle: '#f8fafc', // slate-50
+              },
+              text: {
+                DEFAULT: '#0f172a', // slate-900
+                muted: '#64748b',   // slate-500
+              },
+              // Dark Mode
+              dark: {
+                primary: {
+                  DEFAULT: '#22d3ee', // cyan-400
+                  light: '#67e8f9'    // cyan-300
+                },
+                surface: {
+                  DEFAULT: '#0f172a', // slate-900
+                  subtle: '#1e293b',  // slate-800
+                },
+                text: {
+                  DEFAULT: '#e2e8f0', // slate-200
+                  muted: '#94a3b8',   // slate-400
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-surface dark:bg-dark-surface text-text dark:text-dark-text font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      // Set theme on initial load
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </body>
+</html>
